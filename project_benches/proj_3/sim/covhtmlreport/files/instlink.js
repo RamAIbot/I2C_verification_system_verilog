@@ -1,0 +1,2 @@
+var g_data = {"24":[22,"wb_bus",1],"26":[25,"wishbone_inst0",1],"27":[25,"regblock_inst9",1],"29":[28,"mbyte_inst0",1],"30":[28,"mbit_inst0",1],"33":[32,"scl_filter",1],"34":[32,"sda_filter",1],"35":[32,"bus_state_inst0",1],"32":[31,"scl_sda_gen(0)/conditioner_inst0",1],"31":[28,"conditioner_mux_inst0",1],"28":[25,"iicmb_m_inst0",1],"25":[22,"DUT",1],"22":[-1,"top",1],"37":[-1,"wb_pkg",1],"50":[-1,"i2c_pkg",1],"61":[-1,"i2cmb_env_pkg",1],"69":[-1,"iicmb_pkg",1],"71":[-1,"#TestplanGenericCoverage#",1]};
+processInstLinks(g_data);

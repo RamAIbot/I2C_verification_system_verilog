@@ -1,0 +1,2 @@
+var g_data = {"21":["#TestplanGenericCoverage#",0.00,1],"20":["work.bus_state(rtl)",82.06,1],"18":["work.conditioner(str)",100.00,1],"17":["work.conditioner_mux(str)",86.60,1],"19":["work.filter(rtl)",100.00,1],"7":["work.i2c_pkg",50.97,1],"8":["work.i2cmb_env_pkg",0.00,1],"14":["work.iicmb_m(str)",100.00,1],"2":["work.iicmb_pkg",0.00,1],"16":["work.mbit(rtl)",76.66,1],"15":["work.mbyte(rtl)",73.33,1],"13":["work.regblock(rtl)",81.23,1],"3":["work.wb_if",100.00,1],"5":["work.wb_pkg",37.95,1],"12":["work.wishbone(rtl)",76.05,1]};
+processDuLinks(g_data);

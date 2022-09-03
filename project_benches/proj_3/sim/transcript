@@ -1,0 +1,59 @@
+# //  Questa Sim
+# //  Version 2020.4_1 linux Nov  6 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do load_ucdbs_and_merge_with_test_plan.do
+# Format 'Excel' read from parameter file.
+# 28 testplan section(s) added.
+# Database './test_plan_layered_testbench.ucdb' written.
+# Merging file test_plan_layered_testbench.ucdb
+# Merging file wb_transaction_base.12345.ucdb
+# Merging file sim_and_testplan_merged.ucdb
+# Writing merged result to sim_and_testplan_merged.ucdb
+# 
+# Applying tag commands ...
+# ===== Testplan item: /testplan/I2C Operations Testing/I2C Operations Testing
+# (Tag command: -tagname testplan.2.3 -cvgmatch i2c_mod_cg -cvpmatch op_val_i2c )
+# No matching paths
+# ===== Testplan item: /testplan/I2C Operations Testing/I2C Acknowledgement Check
+# (Tag command: -tagname testplan.2.6 -assert -match assert__i2c_ack_check )
+# No matching paths
+# ===== Testplan item: /testplan/I2CMB Controller testing/Single bus active
+# (Tag command: -tagname testplan.4.1 -assert -match assert__single_bus_active )
+# No matching paths
+# ===== Testplan item: /testplan/I2CMB Controller testing/CMDR Command responses
+# (Tag command: -tagname testplan.4.2 -assert -match assert__CMDR_responses )
+# No matching paths
+# All tags are applied successfully.
+# coverage read -dataset sim_and_testplan_merged ./sim_and_testplan_merged.ucdb
+# ./sim_and_testplan_merged.ucdb opened as coverage dataset "sim_and_testplan_merged"
+# QuestaSim vcover 2020.4_1 Coverage Utility 2020.11 Nov  6 2020
+# Start time: 23:45:58 on Apr 13,2022
+# vcover report -details -html -htmldir covhtmlreport -assert -directive -cvg -code bcefst -threshL 50 -threshH 90 ./sim_and_testplan_merged.ucdb 
+# ** Warning: (vcover-19053) Option '-htmldir' has been deprecated. Please use option '-output' instead.
+# ** Error: (vcover-19071) Directory 'covhtmlreport' already exists.
+# End time: 23:45:58 on Apr 13,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Error in macro ./load_ucdbs_and_merge_with_test_plan.do line 5
+# QuestaSim vcover 2020.4_1 Coverage Utility 2020.11 Nov  6 2020
+# Start time: 23:45:58 on Apr 13,2022
+# vcover report -details -html -htmldir covhtmlreport -assert -directive -cvg -code bcefst -threshL 50 -threshH 90 ./sim_and_testplan_merged.ucdb 
+# ** Warning: (vcover-19053) Option '-htmldir' has been deprecated. Please use option '-output' instead.
+# ** Error: (vcover-19071) Directory 'covhtmlreport' already exists.
+# End time: 23:45:58 on Apr 13,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+#     while executing
+# "error [FixExecError $msg]"
+#     (procedure "vcover" line 24)
+#     invoked from within
+# "vcover report -details -html -htmldir covhtmlreport -assert -directive -cvg -code bcefst -threshL 50 -threshH 90 ./sim_and_testplan_merged.ucdb"

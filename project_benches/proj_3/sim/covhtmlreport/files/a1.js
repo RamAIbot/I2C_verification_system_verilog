@@ -1,0 +1,2 @@
+var g_data = {"24":{"pr":"/top/wb_bus","ty":1,"asserts":[{"n":["master_write/fsmr_read_only_test"],"h":[0,1]}],"ad":0},"3":{"pr":"work.wb_if","ty":0,"asserts":[{"n":["master_write/fsmr_read_only_test"],"h":[0,1]}],"ad":0}}
+processAssertionsData(g_data);

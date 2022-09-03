@@ -1,0 +1,454 @@
+# //  Questa Sim
+# //  Version 2020.4_1 linux Nov  6 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -sv_seed 12345 -do "run 0;do wave.do;run -a" "+GEN_TRANS_TYPE=i2c_transaction_base" "+I2C_GEN_TRANS_TYPE=wb_transaction_base" optimized_debug_top_tb 
+# Start time: 02:08:23 on Apr 12,2022
+# Loading sv_std.std
+# Loading work.wb_if(fast)
+# Loading work.ncsu_pkg(fast)
+# Loading work.wb_pkg(fast)
+# Loading work.i2c_if(fast)
+# Loading work.i2c_pkg(fast)
+# Loading work.i2cmb_env_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.i2c_if(fast__2)
+# Loading work.wb_if(fast__2)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.iicmb_m_wb(str)#1
+# Loading work.wishbone(rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading work.iicmb_pkg(body)
+# Loading work.regblock(rtl)#1
+# Loading work.iicmb_int_pkg(body)
+# Loading work.iicmb_m(str)#1
+# Loading work.mbyte(rtl)#1
+# Loading work.mbit(rtl)#1
+# Loading work.conditioner_mux(str)#1
+# Loading work.conditioner(str)#1
+# Loading work.filter(rtl)#1
+# Loading work.bus_state(rtl)#1
+# run 0
+# ----------------------------------------------------------------
+# //  NCSU Package 
+# //  Version 1.0a
+# ----------------------------------------------------------------
+# 
+# 
+# NCSU_INFO:Time                    0:ncsu_component::build():  of tst.env.p0_agent.driver called
+# NCSU_INFO:Time                    0:ncsu_component::build():  of tst.env.p0_agent.monitor called
+# NCSU_INFO:Time                    0:ncsu_component::build():  of tst.env.p1_agent.driver called
+# NCSU_INFO:Time                    0:ncsu_component::build():  of tst.env.p1_agent.monitor called
+# NCSU_INFO:Time                    0:ncsu_component::build():  of tst.env.pred called
+# NCSU_INFO:Time                    0:ncsu_component::build():  of tst.env.scbd called
+# do wave.do
+# run -a
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{64}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{64}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{63}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{63}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{65}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{65}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{62}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{62}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{66}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{66}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{61}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{61}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{67}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{67}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{60}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{60}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{68}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{68}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{59}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{59}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{69}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{69}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{58}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{58}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{70}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{70}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{57}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{57}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{71}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{71}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{56}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{56}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{72}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{72}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{55}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{55}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{73}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{73}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{54}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{54}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{74}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{74}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{53}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{53}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{75}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{75}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{52}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{52}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{76}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{76}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{51}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{51}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{77}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{77}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{50}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{50}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{78}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{78}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{49}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{49}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{79}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{79}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{48}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{48}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{80}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{80}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{47}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{47}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{81}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{81}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{46}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{46}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{82}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{82}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{45}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{45}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{83}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{83}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{44}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{44}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{84}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{84}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{43}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{43}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{85}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{85}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{42}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{42}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{86}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{86}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{41}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{41}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{87}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{87}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{40}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{40}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{88}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{88}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{39}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{39}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{89}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{89}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{38}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{38}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{90}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{90}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{37}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{37}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{91}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{91}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{36}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{36}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{92}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{92}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{35}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{35}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{93}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{93}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{34}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{34}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{94}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{94}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{33}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{33}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{95}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{95}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{32}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{32}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{96}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{96}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{31}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{31}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{97}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{97}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{30}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{30}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{98}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{98}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{29}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{29}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{99}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{99}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{28}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{28}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{100}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{100}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{27}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{27}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{101}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{101}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{26}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{26}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{102}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{102}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{25}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{25}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{103}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{103}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{24}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{24}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{104}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{104}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{23}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{23}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{105}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{105}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{22}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{22}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{106}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{106}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{21}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{21}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{107}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{107}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{20}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{20}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{108}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{108}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{19}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{19}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{109}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{109}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{18}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{18}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{110}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{110}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{17}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{17}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{111}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{111}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{16}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{16}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{112}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{112}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{15}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{15}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{113}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{113}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{14}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{14}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{114}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{114}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{13}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{13}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{115}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{115}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{12}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{12}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{116}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{116}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{11}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{11}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{117}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{117}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{10}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{10}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{118}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{118}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{9}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{9}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{119}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{119}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{8}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{8}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{120}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{120}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{7}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{7}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{121}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{121}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{6}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{6}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{122}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{122}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{5}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{5}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{123}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{123}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{4}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{4}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{124}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{124}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{3}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{3}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{125}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{125}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{2}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{2}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{126}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{126}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{1}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{1}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x0 Data:0x'{127}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x0 Data:0x'{127}
+# tst.env.scbd WB & I2C transaction MATCH!
+# tst.env.scbd From nb_put: Actual transaction name: monitored_trans transaction_count: 1 Address:0x22 Operation:0x1 Data:0x'{0}
+# tst.env.scbd From nb_transport: Expected transaction name: i2c_trans_temp transaction_count: 2 Address:0x22 Operation:0x1 Data:0x'{0}
+# tst.env.scbd WB & I2C transaction MATCH!
+# ** Note: $finish    : /afs/unity.ncsu.edu/users/r/rsekani/bin/ece745/project3/project_benches/proj_2/sim/../../../verification_ip/environment_packages/i2cmb_env_pkg/src/i2cmb_generator.svh(60)
+#    Time: 62968210 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Task i2cmb_env_pkg/i2cmb_generator::run at /afs/unity.ncsu.edu/users/r/rsekani/bin/ece745/project3/project_benches/proj_2/sim/../../../verification_ip/environment_packages/i2cmb_env_pkg/src/i2cmb_generator.svh line 60
+# End time: 02:08:52 on Apr 12,2022, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
